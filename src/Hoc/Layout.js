@@ -7,14 +7,6 @@ const Layout = (props) => {
         <div>
             <Header/> 
             {props.children} 
-            <hr/>
-            <hr/>
-            <hr/>
-            <hr/>
-            <hr/>
-            <hr/>
-            <hr/>
-            <hr/>
             <Footer/>
         </div> );
     }

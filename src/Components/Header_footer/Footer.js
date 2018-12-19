@@ -3,7 +3,9 @@ import { BDLogo } from '../ui/icons';
 
 const Footer = () => {
     return ( 
-        <footer className='bck_blue'>
+        <footer className='bck_black' style={{
+            borderTop: '2px solid #d500fb'
+        }}>
             <div className='footer_logo'>
                 <BDLogo
                     width='90px'
@@ -13,7 +15,7 @@ const Footer = () => {
                 />
             </div>
             <div style={{
-                fontFamily: 'Share Tech Mono, monospace',
+                padding: '10px 0 0 0',
                 color: '#00e3ef'
             }}>
                 Brutal Deluxe 2105. All rights reserved.

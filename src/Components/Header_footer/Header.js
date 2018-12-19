@@ -2,10 +2,9 @@ import React, { Component } from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar'
 import Button from '@material-ui/core/Button';
-
 import { Link } from 'react-router-dom';
 
-import { CityLogo } from '../ui/icons';
+import { BDLogo } from '../ui/icons';
 
 class Header extends Component {
     render() {
@@ -13,29 +12,37 @@ class Header extends Component {
             <AppBar
                 position="fixed"
                 style={{
-                    backgroundColor:'#98c5e9',
+                    backgroundColor:'#0a0a0a',
                     boxShadow: 'none',
                     padding:'10px 0',
-                    borderBottom: '2px solid #00285e'
+                    borderBottom: '2px solid #d500fb'
                 }}
             >
                 <Toolbar style={{display:'flex'}}>
                     <div style={{flexGrow: 1}}>
                         <div className="header_logo">
-                            <CityLogo
+                            <BDLogo
                                 link={true}
                                 linkTo="/"
-                                width="70px"
-                                height="70px"
-                            ></CityLogo>
+                                width="90px"
+                                height="80px"
+                            ></BDLogo>
                         </div>  
                     </div>
 
                     <Link to="/the_team">
-                        <Button color="inherit">The team</Button>
+                            <Button color='primary' style={{
+                                fontSize: '25px',
+                                fontFamily: 'Share Tech Mono, monospace',
+                                color: '#00e3ef'
+                            }}>Team</Button>
                     </Link>
                     <Link to="/the_matches">
-                        <Button color="inherit">Matches</Button>
+                        <Button color='primary' style={{
+                                fontSize: '25px',
+                                fontFamily: 'Share Tech Mono, monospace',
+                                color: '#00e3ef'
+                            }}>Matches</Button>
                     </Link>
 
                 </Toolbar>
